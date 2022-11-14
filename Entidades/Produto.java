@@ -1,6 +1,9 @@
-package Entidades;
 /*2) Implemente em Java uma classe que represente um Produto:
    a)Um produto tem como atributos um código (um inteiro), um nome (uma String), um valor (um float) e um fornecedor (do tipo Fornecedor implementado na questão anterior) */
+
+
+package Entidades;
+
 public class Produto {
     private int codigo;
     private float valor;
@@ -11,12 +14,16 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(int codigo, Float valor, String nome, fornecedor fornecedor) {
+   
+
+    public Produto(int codigo, float valor, String nome, Entidades.fornecedor fornecedor) {
         this.codigo = codigo;
         this.valor = valor;
         this.nome = nome;
         this.fornecedor = fornecedor;
     }
+
+
 
     //gets e sets
     public int getCodigo() {
